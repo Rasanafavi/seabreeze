@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/plugins.min.css" media="all">
+    <link rel="stylesheet" href="css/app.min.css" media="all">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW0Qv7G55SxAa5zZ26GXntaEH1jFP4JII"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></script>
+</head>
+
+<body class="homepage">
+    <header>
+        <div class="top-nav-strip"></div>
+        <div class="main-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="nav-wrap">
+                            <div class="brand-col">
+                                <a class="brand" href="/">
+                                    <img src="logo.svg" width="223" height="56" alt="Sea Breeze">
+                                </a>
+                            </div>
+                            <div class="menu-col">
+                                <div class="top-item">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-sign-in" aria-hidden="true"></i> Member Login
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-solid fa-earth-americas"></i> United Arab Emirates
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                                Search
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="middle-item">
+                                    <a class="btn btn-secondary btn-lg i-left" href="tel:800 2733">
+                                        <i class="fa-solid fa-phone-volume"></i> 800 2733
+                                    </a>
+                                    <button class="hamburger hamburger--collapse" type="button">
+                                        <span class="hamburger-box">
+                                            <span class="hamburger-inner"></span>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="lower-item">
+                                    <ul>
+
+                                        <li><a href="#">Track</a>
+                                        </li>
+
+
+                                        <li><a href="#">About Us</a>
+                                        </li>
+
+
+                                        <li><a href="#">Divisions</a>
+                                        </li>
+
+
+                                        <li><a href="#">Services</a>
+                                        </li>
+
+
+                                        <li><a href="#">Features</a>
+                                        </li>
+
+                                        <li><a href="#">News</a></li>
+
+
+
+
+                                        <li><a href="#">Contact Us</a>
+                                        </li>
+
+
+
+                                        <li class="dropdown">
+                                            <a href="#">Extras</a>
+
+                                        </li>
+                                    </ul>
+                                    <div class="overlay">
+                                        <button class="hamburger hamburger--collapse is-active" type="button">
+                                            <span class="hamburger-box">
+                                                <span class="hamburger-inner"></span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="inner-banner">
+        <div class="banner-bg">
+            <picture>
+
+                <source media="(max-width:767px)" srcset="fGw-z72n819vk-j6CJ-FLosp-CyKRHPxvVrQzwyiTMY.jpeg"
+                    type="image/jpeg">
+
+                <img src="fGw-z72n819vk-j6CJ-FLosp-CyKRHPxvVrQzwyiTMY.jpeg" alt="Image Caption">
+            </picture>
+        </div>
+    </section>
+    <section class="our-presence">
+        <div class="title text-center">
+            <h2><i class="fa-solid fa-location-dot"></i><a href="#">Our Presence </a></h2>
+        </div>
+
+        <div class="swiper-container country-slider" thumbsslider="">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="country-name-tab tab-switch">UAE</div>
+                </div>
+
+                <div class="swiper-slide" id="ksa_slider_id">
+                    <div class="country-name-tab tab-switch">KSA</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="country-name-tab tab-switch">PHILIPPINES</div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="country-name-tab tab-switch">INDIA</div>
+                </div>
+            </div>
+        </div>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11065.886298851881!2d75.96610995240718!3d11.14951709701144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64ee2471144f5%3A0x8692de4117c315d!2sKondotty%2C%20Kerala%20673638!5e0!3m2!1sen!2sin!4v1697708598737!5m2!1sen!2sin" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+        <div class="swiper-container map-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="map-canvas">
+                        <div id="uae"></div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="map-canvas">
+                        <div id="ksa"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="map-canvas">
+                        <div id="philippines"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="map-canvas">
+                        <div id="india"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section class="our-contacts" style="background-image: url(industrial-port-container-yard.jpg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title text-center color-white">
+                        <h2><a href="#">Our Contacts</a></h2>
+                    </div>
+
+                    <div class="nav nav-tabs country-tab" id="nav-tab"><button class="tab-switch active"
+                            data-bs-target="#nav-uae" data-bs-toggle="tab" id="nav-uae-tab" role="tab"
+                            type="button">UAE</button><button class="tab-switch" data-bs-target="#nav-ksa"
+                            data-bs-toggle="tab" id="nav-ksa-tab" role="tab" type="button">KSA</button><button
+                            class="tab-switch" data-bs-target="#nav-philippines" data-bs-toggle="tab"
+                            id="nav-philippines-tab" role="tab" type="button">PHILIPPINES</button><button
+                            class="tab-switch" data-bs-target="#nav-india" data-bs-toggle="tab" id="nav-india-tab"
+                            role="tab" type="button">INDIA</button></div>
+
+                    <div class="tab-content country-tab-content" id="nav-tabContent">
+                        <div aria-labelledby="nav-uae-tab" class="tab-pane fade show active" id="nav-uae"
+                            role="tabpanel"><button class="tab-switch">UAE</button>
+
+                            <div class="tab-card">
+                                <div class="row">
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div aria-labelledby="nav-profile-tab" class="tab-pane fade" id="nav-ksa" role="tabpanel">
+                            <button class="tab-switch">KSA</button>
+
+                            <div class="tab-card">
+                                <div class="row">
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div aria-labelledby="nav-philippines-tab" class="tab-pane fade" id="nav-philippines"
+                            role="tabpanel"><button class="tab-switch">PHILIPPINES</button>
+
+                            <div class="tab-card">
+                                <div class="row">
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div aria-labelledby="nav-india-tab" class="tab-pane fade" id="nav-india" role="tabpanel">
+                            <button class="tab-switch">INDIA</button>
+
+                            <div class="tab-card">
+                                <div class="row">
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-col">
+                                        <div class="tab-card-item">
+                                            <h6>DEIRA</h6>
+                                            <span>Nakheel</span> <a href="tel:971 4 250 1725">+971 4 250 1725</a> <a
+                                                href="tel:971 50 990 3177">+971 50 990 3177</a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+    </section>
+
+    <nav class="next-page"><a href="support/online-tracking.html">Track Your Shipment <i
+                class="fa-solid fa-greater-than" style="width: 20px; padding-left:5px"></i><i
+                class="fa-solid fa-greater-than" style="width: 20px;"></i></a></nav>
+
+
+    <footer>
+        <div class="floating-button scroll-button">
+            <ul class="social-media">
+                <li>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="fixed-btn-group scroll-button">
+            <button type="button" class="btn btn-secondary btn-xs scroll-top-top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-item">
+                        <h4 class="mb-2" style="color: rgb(0, 183, 255);"><b>Breeze Holding Group</b></h4>
+                        <ul>
+                            <li>
+                                <a href="#" class="text-secondary">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="/privacy-policy" class="text-secondary">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="/disclaimer" class="text-secondary">Disclaimer</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary">Copyrights</a>
+                            </li>
+                        </ul>
+                        <div class="download-app">
+                            <h5 class="text-secondary"><b>Download Seabreeze Xpress App </b></h5>
+                            <ul class="btn-group">
+                                <li>
+                                    <a target="_blank" href="#">
+
+                                        <img src="app-store.png" alt="Google play">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="#">
+                                        <img class="" src="google-play.png" alt="Apple play">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-item">
+                        <h5 class="text-dark mb-2"><b>Quick Links</b></h5>
+                        <ul>
+                            <li>
+                                <a href="#" class="text-secondary">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary">Logistic Solutions</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary">Cargo Services</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary">Become a member</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary">Track Shipment</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary">Blog</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-item">
+                        <h5 class="text-black mb-2"><b>Quick Contact</b></h5>
+                        <ul>
+                            <li class="text-secondary">P.O.Box : 241866 Bur Dubai, UAE</li>
+                            <li>
+                                <a href="tel:971 43537967" class="text-secondary">Phone :<span>+971 4 3537967</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@seabreezecourier.com" class="text-secondary">Email
+                                    :info@seabreezecourier.com
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:800 2733" class="text-secondary">UAE(TOLL FREE) <span>- 800 2733</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:800 244 2999" class="text-secondary">KSA(TOLL FREE) <span>- 800 244
+                                        2999</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:0483 2712363" class="text-secondary">INDIA(TEL) :<span>- 0483
+                                        2712363</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-item">
+                        <h5 class="text-dark mb-2"><b>Follow us</b></h5>
+                        <ul class="social-media">
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-pinterest-p"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-tiktok"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <form action="" method="post" id="newsletter-form">
+                            <input type="hidden" name="_token" value="890iP4dxzlNXvGrsphLImTDdJDzgDxcCT4aqlMPh">
+                            <div class="form-group">
+                                <label for="newsletter" class="form-label text-secondary">Subscribe to our
+                                    newsletter</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Enter your email id"
+                                        name="customeremail" maxlength="100">
+                                    <button type="submit" class="input-group-text ">SUBSCRIBE</button>
+
+                                </div>
+                                <div class=""></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <p><span class="dynamic-year"></span> © Seabreeze Air Cargo LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
